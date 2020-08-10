@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    container_name: tads
+    build: ./docker
+    volumes:
+      - ./:/projects/tads
+    ports:
+      - "3939:3939"
+    tty: true
